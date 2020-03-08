@@ -48,7 +48,8 @@
     "stylelint-order": "^4.0.0",
     "stylelint-scss": "^3.13.0",
     "typescript": "^3.7.5",
-    "uuid": "^3.3.3","history": "latest"
+    "uuid": "^3.3.3",
+    "history": "latest"
   },
   "eslintConfig": {
     "extends": "react-app"
