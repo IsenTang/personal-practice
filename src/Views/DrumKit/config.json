@@ -1,0 +1,22 @@
+[
+    {
+        "key":"A",
+        "music":"CLAP",
+        "code":97
+    },
+    {
+        "key":"S",
+        "music":"HIHAT",
+        "code":115
+    },
+    {
+        "key":"D",
+        "music":"KICK",
+        "code":100
+    },
+    {
+        "key":"F",
+        "music":"OPENHAT",
+        "code":102
+    }
+]

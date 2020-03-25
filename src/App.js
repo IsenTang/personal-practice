@@ -1,4 +1,5 @@
 import React,{ useState } from 'react';
+
 import _ from 'lodash';
 import { useMount } from 'react-use';
 import intl from 'react-intl-universal';
@@ -8,10 +9,12 @@ import { Switch,Redirect,Route } from 'react-router-dom';
 import routers from './Routers/index';
 import { get,set } from './Common/utils';
 
+import 'typeface-roboto';
 import './App.scss';
 
 /* components */
 import Loading from './Components/Loading/Loading';
+import Layout from './Views/Layout/Layout';
 
 const locales = {
    'en-US': require('./I18n/en-US.json'),
@@ -50,23 +53,24 @@ function App () {
          .then(() => {
 
             /* After loading CLDR locale data, start to render*/
-            setTimeout(()=>{
+            // setTimeout(()=>{
 
-               setInitDone(true);
-            },2000);
+            setInitDone(true);
+            // },2000);
 
          });
    }
 
    return (
       initDone ?
-         <div className="App">
+         <Layout>
+
             <Loading/>
             <Switch>
                { renderRouter() }
             </Switch>
 
-         </div> : <Loading showLoading={ true }/>
+         </Layout> : <Loading showLoading={ true }/>
    );
 }
 

@@ -1,0 +1,9 @@
+.drum-kit{
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : center;
+    height : 100%;
+    background-image : url('../../Assets/drumkit/background.jpg');
+    background-repeat :no-repeat;
+}
