@@ -1,0 +1,55 @@
+/**横向布局**/
+
+.container-row {
+    display : flex;
+    flex-direction : row;
+  }
+  
+  /**横向左右布局**/
+  
+  .container-between {
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+  }
+  
+  /**横向居中布局**/
+  
+  .container-row-center {
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+  }
+  
+  .container-row-align {
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+  }
+  
+  /**纵向布局**/
+  
+  .container-col {
+    display : flex;
+    flex-direction : column;
+  }
+  
+  /**垂直居中，水平居中**/
+  
+  .vertical-horizontally {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+  }
+  
+  .vertical {
+    align-items : center;
+  }
+  
+  .horizontally {
+    justify-content : center;
+  }
+  
+  .space-between {
+    justify-content : space-between;
+  }

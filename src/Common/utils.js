@@ -14,3 +14,13 @@ export function set (name, data){
 
    localStorage.setItem(name, JSON.stringify(data));
 }
+
+export async function sleep (time){
+
+   return new Promise((resolve)=>{
+
+      setInterval(()=>{
+         resolve();
+      },time);
+   });
+}

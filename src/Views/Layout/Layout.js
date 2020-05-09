@@ -18,8 +18,10 @@ import { Button,Toolbar,List,ListItem,ListItemIcon,ListItemText,ListSubheader,Cs
 import { Label,
    Brightness4Outlined,
    Brightness7Outlined,
+   TextFields,
    MusicNote
 } from '@material-ui/icons';
+import SortIcon from '@material-ui/icons/Sort';
 import { createMuiTheme } from '@material-ui/core/styles';
 import intl from 'react-intl-universal';
 import moment from 'moment';
@@ -100,6 +102,15 @@ function Layout ({ children }) {
                            </ListSubheader>
                         }
                      >
+
+                        {/* 个人简历 */}
+                        <ListItem button onClick={ ()=>{ dispatch(push('/resume'));} }>
+                           <ListItemIcon>
+                              <TextFields />
+                           </ListItemIcon>
+                           <ListItemText primary={ intl.get('resume') } />
+                        </ListItem>
+
                         {/* 标签云 */}
                         <ListItem button>
                            <ListItemIcon>
@@ -114,6 +125,13 @@ function Layout ({ children }) {
                               <MusicNote />
                            </ListItemIcon>
                            <ListItemText primary={ intl.get('drum-kit') } />
+                        </ListItem>
+
+                        <ListItem button onClick={ ()=>{ dispatch(push('/bubbleSort'));} }>
+                           <ListItemIcon>
+                              <SortIcon/>
+                           </ListItemIcon>
+                           <ListItemText primary={ intl.get('bubble-sort') } />
                         </ListItem>
 
                      </List>

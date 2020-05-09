@@ -2,5 +2,8 @@
   "directory": "Directory",
   "personal-practice": "Personal Practice",
   "tag-cloud": "Tag Cloud",
-  "drum-kit":"Drum-Kit"
+  "drum-kit":"Drum-Kit",
+  "resume":"Resume",
+  "bubble-sort":"Bubble-Sort",
+  "start":"Start"
 }
