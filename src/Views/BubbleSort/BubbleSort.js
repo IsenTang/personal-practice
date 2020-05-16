@@ -34,8 +34,11 @@ function BubbleSort () {
 
    });
 
+   /* 改变位置，重新渲染 */
    useEffect(() => {
+
       setPillar(renderPillars());
+
    }, [ perHeight ]);
 
    // 获取每个柱子的高度
@@ -72,6 +75,7 @@ function BubbleSort () {
 
             for(let j = 0; j < array.length - 1 - i; j++){
 
+               /* 等待0.5s，重新渲染执行动画 */
                await sleep(500);
 
                setPillar(renderPillars([ j,j + 1 ]));
