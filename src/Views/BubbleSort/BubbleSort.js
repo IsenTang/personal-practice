@@ -39,7 +39,7 @@ function BubbleSort () {
 
       setPillar(renderPillars());
 
-   }, [ perHeight ]);
+   }, [ perHeight ]); // eslint-disable-line react-hooks/exhaustive-deps
 
    // 获取每个柱子的高度
    function getPerHeight (array){

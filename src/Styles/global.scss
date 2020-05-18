@@ -53,3 +53,8 @@
   .space-between {
     justify-content : space-between;
   }
+
+  .main-height{
+
+    height :calc(100vh - 64px - 49px);
+  }

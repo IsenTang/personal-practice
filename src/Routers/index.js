@@ -2,6 +2,7 @@ import Welcome from '../Views/Welcome/Welcome';
 import DrumKit from '../Views/DrumKit/DrumKit';
 import Resume from '../Views/Resume/Resume';
 import BubbleSort from '../Views/BubbleSort/BubbleSort';
+import TagCloud from '../Views/TagCloud/TagCloud';
 
 /* router config */
 const config = [
@@ -28,6 +29,12 @@ const config = [
       path:      '/bubbleSort',
       exact:     true,
       component: BubbleSort
+   },
+   {
+      name:      'tagCloud',
+      path:      '/tagCloud',
+      exact:     true,
+      component: TagCloud
    }
 ];
 

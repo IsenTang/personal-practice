@@ -112,8 +112,8 @@ function Layout ({ children }) {
                         </ListItem>
 
                         {/* 标签云 */}
-                        <ListItem button>
-                           <ListItemIcon>
+                        <ListItem button onClick={ ()=>{ dispatch(push('/tagCloud'));} }>
+                           <ListItemIcon >
                               <Label />
                            </ListItemIcon>
                            <ListItemText primary={ intl.get('tag-cloud') } />

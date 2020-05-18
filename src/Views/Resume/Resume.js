@@ -102,7 +102,7 @@ html {
       /* 清除定时器 */
       return () => { clearTimeout(timer); };
 
-   }, [ style,resume ]);
+   }, [ style,resume ]); // eslint-disable-line react-hooks/exhaustive-deps
 
    /* 执行markdown解析 */
    function getIsMarked (){

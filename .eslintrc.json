@@ -6,7 +6,8 @@
   },
   "plugins": [
     "react",
-    "react-app"
+    "react-app",
+    "react-hooks"
   ],
   "settings":{
     "react":{
