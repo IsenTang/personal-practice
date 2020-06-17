@@ -67,6 +67,7 @@ function BubbleSort () {
 
       if(Array.isArray(array)){
 
+         /* 如果不是数组，返回 */
          if(array.length < 1){
             return array;
          }
